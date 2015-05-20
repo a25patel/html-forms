@@ -18,7 +18,18 @@
 
     <h1>Form Fields: Example 1</h1>
 
-  <form name="ex1" action="" method="get">
+  <form name="ex1" action="index.html" method="get">
+
+    <!-- method get/post.
+    post: private, used for queries, all the answers don't show up in the URL
+      examples when to use:
+        cc
+        passwords
+        address
+        private info
+    get: submits the work, more public, everything can be seen in the URL
+  -->
+
     <div>
       <label for="fname"> First Name </label>
         <input type ="text" id="fname">
@@ -58,6 +69,12 @@
       <button type="submit" id="sub"> Click Me! </button>
     </div>
 
+    <!--
+    Hit submit, what happens to unselected checkboxes?
+      Nothing is sent to server
+      
+
+    -->
   </form>
 
 <!--Focuses my text area! -->

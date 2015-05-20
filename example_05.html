@@ -17,7 +17,54 @@
     </nav>
     <h1>Form Fields: Example 5</h1>
 
-    <form action="" method="get">
+    <form id="ex5" action="example_05.html" method="post">
+
+    <div>
+      <label for="song"> Song Name </label>
+        <input type="text" id="song" name="songname">
+    </div>
+    <div>
+      <label for="writer"> Songwriter Email </label>
+        <input type="text" id="writer" name="songwriter">
+    </div>
+
+    <div>
+
+      <input type="checkbox" id="aca" name="awesome">
+      <label for="aca"> Aca-Awesome? </label>
+      <input type="checkbox" id="win" name="will">
+      <label for="will"> Will Win regionals? </labels>
+    </div>
+
+    <div>
+      <label for="slight"> Slight Diva </label>
+      <input type="radio" id="slight" name="diva">
+      <input type="radio" id="mid" name="diva">
+      <input type="radio" id="extreme" name="diva">
+      <label for="extreme"> Extreme Diva </label>
+
+    </div>
+
+    <div>
+      <label for="comment"> Comments </label>
+      <textarea id="comment" rows="10" cols="30"> Great Song.Love it! </textarea>
+      <input type="hidden" id="super" name="comment">
+    </div>
+
+    <div>
+      <label for="soloist"> Soloist </label>
+      <select name="solo" value="person" id="name">
+        <option value="mj"> Mercedes Jones </option>
+        <option value="rb"> Rachel Berry </option>
+        <option value="sl"> Santana Lopez </option>
+      </select>
+    </div>
+    <div>
+          <input  type="submit" name="enter" id="enter" value="Success!">
+          <input type="submit" name="enter" id="enter" value="cancelled">
+          <input type="submit" name="enter" id="enter" valued="I can haz html">
+    </div>
+
     </form>
 
     <div class="query-params">

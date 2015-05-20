@@ -18,19 +18,38 @@
     <h1>Form Fields: Example 3</h1>
 
     <form name="ex3" action="example_03.html" method="get">
-    </form>
 
-<!--
-- in the `example_03.html` file add a form
-  - set the method and action to send a get request to the `example_03.html` page
-- add a fieldset with a legend for "Size"
-  - add three radio buttons, for small, medium and large, each with a label
-  - give each the same name and different values
-- add a fieldset with a legend for "Color"
-  - add three radio buttons, for blue, red and yellow, each with a label
-  - make "red" pre-selected when the page loads
-- Add a submit button (input or button), submit your form and inspect the results
--->
+    <fieldset>
+      <legend>
+        <b> Size </b>
+      </legend>
+
+      <input type="radio" name="size" id="sizesm" value="Small">
+        <label for="sizesm"> Small </label>
+      <input type="radio" name="size" id="sizemd" value="Medium">
+        <label for="sizemd"> Medium </label>
+      <input type="radio" name="size" id="sizelg" value="Large">
+        <label for="sizelg"> Large </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>
+        <b> Color </b>
+      </legend>
+
+      <input type="radio" name="color" id="colorbl" value="Blue">
+        <label for="colorbl"> Blue </label>
+      <input type="radio" name="color" id="coloryw" value="Yellow">
+        <label for="coloryw"> Yellow </label>
+      <input type="radio" name="color" id="colorrd" value="Red" checked>
+        <label for="colorrd"> Red </label>
+
+      </fieldset>
+      <div>
+      <input type="submit" value="submit" id="sub">
+        <label for="sub"> YAY t-shirts! </label>
+      </div>
+    </form>
 
     <div class="query-params">
       <h2>Query Params</h2>

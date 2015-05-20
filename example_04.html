@@ -17,7 +17,75 @@
     </nav>
     <h1>Form Fields: Example 4</h1>
 
-    <form action="" method="get">
+    <form name ="ex4" action="example_04.html" method="get">
+
+
+     <fieldset>
+       <legend>
+        <b> Color Options </b>
+      </legend>
+      <label for="kuler"> Color </label>
+      <select name="color" id="kuler" value="color">
+          <option value="rd" selected> Red </option>
+          <option value="bl"> Blue </option>
+          <option value="yw"> Yellow </option>
+          <option value="gr"> Green </option>
+          <option value="hx"> #6578bf </option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>
+        <b> Size Options </b>
+      </legend>
+      <label for="sizechart"> Size </label>
+      <select name="size" id="sizechart" value="size">
+          <option value="sm"> Small </option>
+          <option value="md"> Medium </option>
+          <option value="lg"> Large </option>
+
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>
+        <b> Shirt Options </b>
+      </legend>
+
+      <label for ="style"> Style </label>
+      <select name="shirt" id="style" value="style">
+          <option value="lon"> Long Sleeve  </option>
+          <option value="sho"> Short Sleeve </option>
+          <option value="tan"> Tank Top </option>
+          <option value="bl"> </option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>
+        <b> Team Options </b>
+      </legend>
+
+<!--
+  If want multiple categories of options in one scroll (ie: Locations of a restaurant in dif states)
+  <optgroup label= "colorado">
+    <option> </option>
+  </optgroup>
+  <optgroup label ="california">
+    <option> </option>
+  </optgroup>
+-->
+        <label for="teams"> Team </label>
+        <select multiple id="teams">
+          <optgroup label="team">
+            <option selected> Broncos </option>
+            <option> Avalanche </option>
+            <option> Nuggets </option>
+          </optgroup>
+        </select>
+    </fieldset>
+
+    <input type="submit" id="enter" value="submitbutton">
     </form>
 
     <div class="query-params">
