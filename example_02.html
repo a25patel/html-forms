@@ -17,7 +17,34 @@
     </nav>
     <h1>Form Fields: Example 2</h1>
 
-    <form action="" method="get">
+    <form name="ex2" action="example_02.html" method="get">
+      <div>
+        <label for="travel"> Which country would you like to visit? </label>
+          <input type="text" id="travel">
+          <input type ="hidden" id="language" value="english">
+      </div>
+      <div>
+        <label for="date"> What day would you like to go? </label>
+          <input type="text" id="date">
+          <input type="hidden" id="format" value="mm/dd/yyyy">
+        </div>
+
+      <div>
+        <input type="checkbox" id="na" value="north america" checked>
+        <label for="na"> North America </label>
+      </div>
+      <div>
+        <input type="checkbox" id="sa" value="south america">
+        <label for="sa"> South America </label>
+      </div>
+      <div>
+        <input type="checkbox" id="eu" value="europe" name="europe">
+        <input type="hidden" name="europe">
+        <label for="eu"> Europe </label>
+      </div>
+      <div>
+        <button type="submit" id="sub"> Click Here! </button>
+
     </form>
 
     <div class="query-params">

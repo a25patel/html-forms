@@ -15,10 +15,53 @@
       <a href="example_05.html">Example 5</a>
       <a href="example_06.html">Example 6</a>
     </nav>
+
     <h1>Form Fields: Example 1</h1>
 
-    <form action="" method="get">
-    </form>
+  <form name="ex1" action="" method="get">
+    <div>
+      <label for="fname"> First Name </label>
+        <input type ="text" id="fname">
+      <label for-"lname"> Last Name</label>
+        <input type = "text" id="lname" value="Last Name">
+    </div>
+
+    <div>
+      <textarea id="hobbies" rows="10" cols="30" value="Hobbies">Some things I love... </textarea>
+    </div>
+
+    <div>
+    <textarea id="dislikes" rows="10" cols="30"> </textarea>
+    </div>
+
+    <div>
+      <label for="@email"> Email</label>
+        <input type="email" id="@email">
+    </div>
+
+    <div>
+      <label for-"tdate"> Today's Date</label>
+        <input type="date" id"tdate" value="Today's Date">
+    </div>
+
+    <div>
+      <label for-"num"> What is your favorite number?</label>
+        <input type="number" id="num" value="Fav #">
+    </div>
+
+    <div>
+      <label for-"fil"> Submit a file please </label>
+        <input type="file" id="fil">
+    <div>
+
+    <div>
+      <button type="submit" id="sub"> Click Me! </button>
+    </div>
+
+  </form>
+
+<!--Focuses my text area! -->
+  <body OnLoad="document.ex1.hobbies.focus();">
 
     <div class="query-params">
       <h2>Query Params</h2>
