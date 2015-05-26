@@ -1,4 +1,4 @@
-<!doctype>
+<!doctype HTML>
 <html>
   <head>
     <title>HTML Forms</title>
@@ -32,38 +32,38 @@
 
     <div>
       <label for="fname"> First Name </label>
-        <input type ="text" id="fname">
-      <label for-"lname"> Last Name</label>
-        <input type = "text" id="lname" value="Last Name">
+        <input type ="text" id="fname" name="fname">
+      <label for="lname"> Last Name</label>
+        <input type = "text" id="lname" name="lname">
     </div>
 
     <div>
-      <textarea id="hobbies" rows="10" cols="30" value="Hobbies">Some things I love... </textarea>
+      <textarea id="hobbies" rows="10" cols="30" value="hobbies" name="hobbies" autofocus>Some things I love... </textarea>
     </div>
 
     <div>
-    <textarea id="dislikes" rows="10" cols="30"> </textarea>
+    <textarea id="dislikes" rows="10" cols="30" name="dislikes"> </textarea>
     </div>
 
     <div>
       <label for="@email"> Email</label>
-        <input type="email" id="@email">
+        <input type="email" id="@email" name="email">
     </div>
 
     <div>
-      <label for-"tdate"> Today's Date</label>
-        <input type="date" id"tdate" value="Today's Date">
+      <label for="tdate"> Today's Date</label>
+        <input type="date" id="tdate" name="tdate">
     </div>
 
     <div>
-      <label for-"num"> What is your favorite number?</label>
-        <input type="number" id="num" value="Fav #">
+      <label for="num"> What is your favorite number?</label>
+        <input type="number" id="num" name="num">
     </div>
 
     <div>
-      <label for-"fil"> Submit a file please </label>
-        <input type="file" id="fil">
-    <div>
+      <label for="fil"> Submit a file please </label>
+        <input type="file" id="fil" name="file">
+    </div>
 
     <div>
       <button type="submit" id="sub"> Click Me! </button>
@@ -72,13 +72,17 @@
     <!--
     Hit submit, what happens to unselected checkboxes?
       Nothing is sent to server
-      
+
 
     -->
   </form>
 
-<!--Focuses my text area! -->
+<!--Focuses
+ my text area! -
   <body OnLoad="document.ex1.hobbies.focus();">
+    OR
+
+  <input type="text" value="fname" id="" name="" autofocus> -->
 
     <div class="query-params">
       <h2>Query Params</h2>

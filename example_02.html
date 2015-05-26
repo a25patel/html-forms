@@ -1,6 +1,8 @@
-<!doctype>
+<!doctype HTML>
 <html>
+
   <head>
+    <meta charset="UTF-8">
     <title>HTML Forms</title>
     <link rel="stylesheet" href="css/app.css" />
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -20,31 +22,31 @@
     <form name="ex2" action="example_02.html" method="get">
       <div>
         <label for="travel"> Which country would you like to visit? </label>
-          <input type="text" id="travel">
+          <input type="text" id="travel" name="travel">
           <input type ="hidden" id="language" value="english">
       </div>
       <div>
         <label for="date"> What day would you like to go? </label>
-          <input type="text" id="date">
+          <input type="text" id="date" name="date">
           <input type="hidden" id="format" value="mm/dd/yyyy">
         </div>
 
       <div>
-        <input type="checkbox" id="na" value="north america" checked>
+        <input type="checkbox" id="na" value="north america" name="na" checked>
         <label for="na"> North America </label>
       </div>
       <div>
-        <input type="checkbox" id="sa" value="south america">
+        <input type="checkbox" id="sa" value="south america" name="sa">
         <label for="sa"> South America </label>
       </div>
       <div>
-        <input type="checkbox" id="eu" value="europe" name="europe">
+        <input type="checkbox" id="eu" value="europe" name="euro">
         <input type="hidden" name="europe">
         <label for="eu"> Europe </label>
       </div>
       <div>
         <button type="submit" id="sub"> Click Here! </button>
-
+      </div>
     </form>
 
     <div class="query-params">

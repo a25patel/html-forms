@@ -1,6 +1,7 @@
-<!doctype>
+<!doctype HTML>
 <html>
   <head>
+    <meta charset="UTF-8">
     <title>HTML Forms</title>
     <link rel="stylesheet" href="css/app.css" />
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -32,13 +33,14 @@
         <input type="text" id="writer" name="songwriter">
     </div>
 
+
     <div>
 
-<!-- Checkboxes *want one checked, write "checked" (no "") in input type <>-->
+<!-- Checkboxes *want one checked, write "checked" (no "") in input type <> -->
       <input type="checkbox" id="aca" name="awesome">
       <label for="aca"> Aca-Awesome? </label>
       <input type="checkbox" id="win" name="will">
-      <label for="will"> Will Win regionals? </labels>
+      <label for="win"> Will Win regionals? </label>
     </div>
 
 <!-- Radio Buttons *preselected? write "checked" (no"") in input <> -->
@@ -53,25 +55,24 @@
 <!-- textarea -->
     <div>
       <label for="comment"> Comments </label>
-      <textarea id="comment" rows="10" cols="30"> Great Song.Love it! </textarea>
+      <textarea id="comment" rows="10" cols="30" name="comment"> Great Song.Love it! </textarea>
       <input type="hidden" id="super" name="comment">
     </div>
 
 <!-- scroll select -->
     <div>
       <label for="soloist"> Soloist </label>
-      <select name="solo" value="person" id="name">
+      <select name="solo" id="soloist">
         <option value="mj"> Mercedes Jones </option>
         <option value="rb"> Rachel Berry </option>
         <option value="sl"> Santana Lopez </option>
       </select>
 
-        </fieldset>
     </div>
     <div>
           <input  type="submit" name="enter" id="enter" value="Success!">
-          <input type="submit" name="enter" id="enter" value="cancelled">
-          <input type="submit" name="enter" id="enter" valued="I can haz html">
+          <input type="submit" name="enter" id="enter2"  value="Cancelled">
+          <input type="submit" name="enter" id="enter3" value="I can haz html">
     </div>
 
     </form>
