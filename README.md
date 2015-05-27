@@ -2,7 +2,6 @@
 
 http://aanalp-htmlforms.s3-website-us-west-2.amazonaws.com/
 
-
 # HTML forms and form elements
 
 ## Setup
